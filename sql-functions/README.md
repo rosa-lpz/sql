@@ -255,7 +255,7 @@ LargestPrice
 
 
 
-## REFERENCES
+# REFERENCES
 
 * https://www.geeksforgeeks.org/sql/sql-functions/
 
@@ -275,6 +275,4 @@ LargestPrice
 
 * https://www.w3schools.com/sql/sql_min_max.asp
 
-
-User defined functions
-https://youtu.be/cdr0TuKCvDU
+* User defined functions: https://youtu.be/cdr0TuKCvDU
