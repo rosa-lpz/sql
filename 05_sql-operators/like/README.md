@@ -300,9 +300,82 @@ WHERE Title LIKE 'WALL-%';
 | 87   | WALL-G | Brenda Chapman | 2042 | 97             |
 
 
+# Performance considerations wehen using the LIKE operator
 
-## Reference
+The LIKE operator is great, but it can potentially impact query performance, especially when used on large datasets. Here are some considerations to optimize its use:
+
+- Indexes: The LIKE operator performs best when the pattern starts with a constant string, such as Adam%, because the database can use indexes. However, patterns like %Adam or %Adam% require a full table scan, which can be slow for large tables.
+- Avoid leading wildcards: Starting a pattern with %, such as %pattern, disables index usage, as the database has to examine every record.
+- Collation and case-insensitive matching: Using functions like LOWER() or UPPER() on columns for case-insensitive searches can also prevent indexes from being used. Instead, make sure the database collation is set appropriately for case-insensitive comparisons.
+- Alternative approaches: For large datasets, consider using full-text search or database-specific search features, such as GIN indexes in PostgreSQL or FULLTEXT indexes in MySQL, when performing complex or frequent string matching.
+- Selective queries: Limit the scope of your queries using additional filters, such as date ranges or numerical columns, to reduce the data processed by the LIKE operator.
+
+### Reference
+* https://www.datacamp.com/tutorial/sql-like-pattern-matching-tutorial
+
+# Why we should not use LIKE with wildcard (%) in SQL query
+Consider this common search pattern:
+
+```SQL
+SELECT * FROM customers 
+WHERE name LIKE '%Smith%';
+```
+This query looks simple, but it harbors several serious issues:
+
+- Index Invalidation: When you use a leading wildcard (%Smith), the database engine cannot utilize the index effectively. It's forced to perform a full table scan, examining every single row in the table.
+- Resource Intensive: Full table scans consume significant CPU resources and I/O operations, especially as your table grows larger.
+- Poor Scalability: As your dataset expands, query performance degrades linearly with the table size.
+
+## Better alternatives
+### Trailing wildcards only
+If you must use wildcards, restrict them to the end of the search term:
+```SQL
+SELECT * FROM customers 
+WHERE name LIKE 'Smith%';
+```
+This allows the database to use the index for matching the prefix, significantly improving performance.
+
+### Full-text Search
+For more complex search requirements, leverage your database’s full-text search capabilities:
+```SQL
+-- MySQL Example
+CREATE FULLTEXT INDEX idx_name ON customers(name);
+
+SELECT * FROM customers 
+WHERE MATCH(name) AGAINST('Smith' IN NATURAL LANGUAGE MODE);
+```
+Full-text search provides:
+- Better performance through specialized indexing
+- More relevant results
+- Support for complex search operations
+
+### Trigram indexes (PostgreSQL)
+PostgreSQL offers powerful trigram matching with the pg_trgm extension:
+```SQL
+CREATE EXTENSION pg_trgm;
+CREATE INDEX idx_trgm_name ON customers USING GIN (name gin_trgm_ops);
+
+SELECT * FROM customers 
+WHERE name % 'Smith';
+```
+This approach provides:
+- Efficient fuzzy matching
+- Good performance even with wildcards
+- Support for similarity searching
+
+### Elastic Search Integration
+For applications requiring advanced search capabilities, consider integrating Elasticsearch:
+- Superior full-text search capabilities
+- Excellent performance at scale
+- Rich feature set including fuzzy matching and relevance scoring
+
+### Reference
+* - https://medium.com/@huzaifaqureshi037/the-hidden-performance-costs-of-sql-wildcards-optimizing-search-query-5ff1c9c455f0
+# References
 
 - https://www.w3schools.com/sql/sql_like.asp
 - https://www.tutorialsteacher.com/sql/sql-like-operator
+- https://www.datacamp.com/tutorial/sql-like-pattern-matching-tutorial
 - https://sqlbolt.com/lesson/select_queries_with_constraints_pt_2
+- https://medium.com/@huzaifaqureshi037/the-hidden-performance-costs-of-sql-wildcards-optimizing-search-query-5ff1c9c455f0
+- https://stackoverflow.com/questions/11478995/why-is-it-not-recomended-to-use-like-in-sql
