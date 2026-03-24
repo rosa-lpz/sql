@@ -1,4 +1,3 @@
-
 # SQL JOINS
 ## **INNER JOIN**
 
