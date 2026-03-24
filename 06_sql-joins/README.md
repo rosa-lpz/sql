@@ -1,3 +1,5 @@
+
+# SQL JOINS
 ## **INNER JOIN**
 
 Returns records that have matching values in two or more tables.

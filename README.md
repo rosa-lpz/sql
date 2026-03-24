@@ -13,3 +13,7 @@ Structured Query Language (SQL)
 
 
 
+# Resources
+## Cheatsheets
+ * DataQuest - SQL Cheat Sheet | [PDF](cheatsheets/dataquest_sql-cheat-sheet.pdf)  | [Website](https://www.dataquest.io/cheat-sheet/sql-cheat-sheet/) 
+
