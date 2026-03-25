@@ -65,6 +65,7 @@ SELECT DISTINCT column_1, column_2, ...column_n
 FROM table_name;
 ```
 
+
 **Counting Unique Values**
 ```
 SELECT COUNT(DISTINCT column_name) AS unique_count

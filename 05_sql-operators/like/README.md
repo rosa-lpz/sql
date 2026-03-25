@@ -56,7 +56,7 @@ Here are some examples showing different `LIKE` operators with '%' and '_' wildc
 
 
 
-## Example 1- Customers
+## Example 1 - Customers
 
 he table below shows the complete "Customers" table from the Northwind sample database:
 
