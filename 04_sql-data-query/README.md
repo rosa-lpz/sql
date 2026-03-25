@@ -1,5 +1,12 @@
 # SQL DATA QUERY
 
+## Content
+* [SELECT](#select)
+    * [SELECT DISTINCT](#select-distinct)
+* [FROM](#from)
+* [WHERE](#where)
+
+# Introduction
 
 
 Stands for **Data Query Language**. DQL is used to fetch data from the database.
@@ -46,15 +53,42 @@ The `SELECT DISTINCT` statement is used to return only distinct (different) valu
 Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
 
 ### **Syntax**
+**One column**
+```sql
+SELECT DISTINCT column_name
+FROM table_name;
+```
+**Multiple columns**
 
 ```sql
 SELECT DISTINCT column_1, column_2, ...column_n  
 FROM table_name;
 ```
 
+**Counting Unique Values**
+```
+SELECT COUNT(DISTINCT column_name) AS unique_count
+FROM table_name;
+```
+
+### Examples
+For example, from an `elements` table:
+```
+SELECT DISTINCT name
+FROM elements;
+```
+This returns each unique element name once, regardless of repetitions.
 
 
 
+
+
+## References
+*  https://www.geeksforgeeks.org/sql/sql-query-to-find-unique-column-values-from-table/
+* https://www.dbvis.com/thetable/sql-distinct-a-comprehensive-guide/
+* Common in analytical or reporting queries. [reddit](https://www.reddit.com/r/SQL/comments/18w218h/how_to_only_return_unique_values/)
+* https://www.geeksforgeeks.org/sql/sql-query-to-find-unique-column-values-from-table/
+* https://learn.microsoft.com/en-us/answers/questions/470464/how-i-get-distinct-values-in-column-wise-in-sql
 
 # FROM
 
@@ -101,7 +135,7 @@ The `WHERE` clause is used to filter records. It is used to extract only those r
 
 
 
-## **Syntax**
+## Syntax
 
 ```SQL
 SELECT column1, column2, ...
