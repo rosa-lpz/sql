@@ -1,4 +1,18 @@
 # SQL Database
+* [Create database](#create-database)
+* [Create table](#create-table)
+* [SQL Constraints](#sql-constraints)
+* [SQL Index](#sql-index)
+* [ALTER Table Statements](#alter-table-statements)
+    * Rename columns
+    * Modify column type
+    * Rename tables
+    * Drop tables
+
+* [SQL Truncate table](#sql-truncate-table)
+* [SQL Merge](#sql-merge)
+* [SQL VIEW](#sql-view)
+
 
 Data Definition Language (DDL): This sub-language is used to define and manage the structure of a database. It includes commands such as CREATE, ALTER, and DROP to create and modify tables, indexes, views, and other database objects.
 
@@ -248,8 +262,7 @@ TRUNCATE TABLE table_name;
 
 * https://www.tutorialsteacher.com/sql/sql-truncate-table
 
-
-
+ 
 ## SQL Merge 
 
 The MERGE statement selects the rows from one or more tables (called Source table), and based on conditions specified, INSERT or UPDATE data to another table (called Target table).
@@ -272,6 +285,7 @@ WHEN NOT MATCHED THEN
 **Reference**
 
 * https://www.tutorialsteacher.com/sql/sql-merge-statement
+
 
 
 
