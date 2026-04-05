@@ -12,6 +12,7 @@
 * [SQL Truncate table](#sql-truncate-table)
 * [SQL Merge](#sql-merge)
 * [SQL VIEW](#sql-view)
+* [Get Information about databases and tables](#get-information-about-databases-and-tables)
 
 
 Data Definition Language (DDL): This sub-language is used to define and manage the structure of a database. It includes commands such as CREATE, ALTER, and DROP to create and modify tables, indexes, views, and other database objects.
@@ -315,8 +316,21 @@ WHERE condition;
 * https://www.w3schools.com/sql/sql_view.asp
 
 
+## Get Information about databases and tables
+### MySQL
 
-## References
+```SQL
+mysql> SELECT DATABASE();
++------------+
+| DATABASE() |
++------------+
+| menagerie  |
++------------+
+```
+### References
+* https://dev.mysql.com/doc/refman/8.4/en/getting-information.html
+
+# References
 
 * https://www.w3schools.com/sql/sql_constraints.asp 
 * Youtube - Web Dev Simplified - Learn SQL In 60 Minutes
