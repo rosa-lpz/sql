@@ -327,8 +327,37 @@ mysql> SELECT DATABASE();
 | menagerie  |
 +------------+
 ```
+If you have not yet selected any database, the result is NULL.
+
+To find out what tables the default database contains (for example, when you are not sure about the name of a table), use this statement: 
+```SQL
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_menagerie |
++---------------------+
+| event               |
+| pet                 |
++---------------------+
+```
+ The name of the column in the output produced by this statement is always Tables_in_db_name, where db_name is the name of the database. See Section 15.7.7.39, “SHOW TABLES Statement”, for more information.
+
+If you want to find out about the structure of a table, the DESCRIBE statement is useful; it displays information about each of a table's columns: 
+```SQL
+mysql> DESCRIBE pet;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| owner   | varchar(20) | YES  |     | NULL    |       |
+| species | varchar(20) | YES  |     | NULL    |       |
+| sex     | char(1)     | YES  |     | NULL    |       |
+| birth   | date        | YES  |     | NULL    |       |
+| death   | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+```
 ### References
 * https://dev.mysql.com/doc/refman/8.4/en/getting-information.html
+* https://databaseblogs.com/how-to-check-table-description-in-sql-server/
 
 # References
 
