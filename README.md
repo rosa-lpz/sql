@@ -9,6 +9,7 @@ Structured Query Language (SQL)
 * [4. SQL Data Query](04_sql-data-query/)
 * [5. SQL Operators](05_sql-operators/)
 * [6. SQL Joins](06_sql-joins/)
+* [7. SQL Combinations](07_sql-combinations/)
 * [SQL Functions](https://github.com/rosa-lpz/SQL/blob/main/SQL%20Functions.md)
 
 
