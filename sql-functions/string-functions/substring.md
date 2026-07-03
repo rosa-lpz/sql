@@ -1,4 +1,5 @@
-# Substring 
+# SUBSTRING
+Extract a substring from a string 
 
 ## PostgreSQL
 ### Syntax
