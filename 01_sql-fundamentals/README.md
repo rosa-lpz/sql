@@ -6,7 +6,11 @@ Now typically, we manipulate those sets of data from what we call a relational d
 
 Now SQL has a number of standards. It’s both an ANSI and an ISO standard, and this is only really important. because that means that each relational database vendor has to implement at least the standard so that you can know that if you learn the SQL standard, you can apply that to many different databases.
 
-## SQL sublanguages
+## SQL Dialets
+Although SQL languages all share a basic structure, some of the specific commands and styles can differ slightly. Popular dialects include MySQL, SQLite, SQL Server, Oracle SQL, and more. PostgreSQL is a good place to start —since it’s close to standard SQL syntax and is easily adapted to other dialects. 
+
+
+## SQL Sublanguages
 
 SQL (Structured Query Language) is a domain-specific language used for managing and querying relational databases. There are several sub-languages within SQL that are used for different purposes. Here are some of the most common sub-languages of SQL:
 
@@ -207,5 +211,6 @@ An SQL developer must decide what type of data that will be stored inside each c
 
 ## References
 
-- [https://www.w3schools.com/sql/sql_datatypes.asp](https://www.w3schools.com/sql/sql_datatypes.asp)
-- [https://www.w3schools.com/sql/sql_dates.asp](https://www.w3schools.com/sql/sql_dates.asp)
+- [w3schools - SQL datatypes](https://www.w3schools.com/sql/sql_datatypes.asp)
+- [w3schools - SQL dates](https://www.w3schools.com/sql/sql_dates.asp)
+- [Datacamp - SQL Basics Cheat Sheet](https://www.datacamp.com/cheat-sheet/sql-basics-cheat-sheet)
