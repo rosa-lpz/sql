@@ -1,0 +1,1 @@
+# Concatenation in SQL
