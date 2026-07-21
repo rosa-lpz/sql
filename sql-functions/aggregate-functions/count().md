@@ -129,7 +129,7 @@ SELECT COUNT(DISTINCT CITY) FROM STATION; -- 486
 # References
 
 * https://www.geeksforgeeks.org/sql/sql-functions/
-
+* https://www.w3schools.com/sql/sql_count_avg_sum.asp
 * https://www.tutorialsteacher.com/sql/count-function
 
   
