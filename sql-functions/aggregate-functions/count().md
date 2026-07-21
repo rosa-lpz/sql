@@ -1,10 +1,10 @@
-## COUNT()
+# COUNT()
 
 The COUNT() function is an aggregate function that is used to find the number of values in the specified column **excluding NULL values.** It can be applied on numeric, character, or date values.
 
 The `COUNT()` function returns the number of rows that matches a specified criterion.
 
-### Syntax
+## Syntax
 
 ```SQL
 SELECT COUNT(column_name)
@@ -19,9 +19,9 @@ FROM table_name
 [GROUP BY]    ;
 ```
 
+# Examples
 
-
-### Example - Employee
+## Example 1 - Employees
 
 | EmpId | FirstName | LastName | Email               | Salary | DeptId |
 | ----- | --------- | -------- | ------------------- | ------ | ------ |
@@ -34,10 +34,11 @@ FROM table_name
 
 
 
+### SQL Query
 
 
 ```SQL
-														 				-- OUTPUT
+                                                                        -- OUTPUT
 -- Specify the column name to count the total values 
 -- in that column excluding NULL values. 
 -- counts the total records in the `FirstName` column.                                   
@@ -73,8 +74,59 @@ GROUP BY DeptId;
 | 40     | 1               |
 
 
+## Example 2 - Difference total and the unique entries
+Find the difference between the total number of **CITY** entries in the table and the number of distinct **CITY** entries in the STATION table. 
 
-## REFERENCES
+
+| ID | CITY | STATE |             
+| ----- | --------- | -------- | 
+| 1     | Aguanga    | King     | 
+| 2     | Alba      | Bond     | 
+| 3     | Albany    | Kochhar  | 
+| 4     |Amo      | King     | 
+| 5     | Andersonville     | Patel    | 
+| 6     | Archie    | Kalam    | 
+
+### SQL Query
+
+MS SQL Server
+
+```sql
+SELECT COUNT(CITY) - COUNT (DISTINCT CITY) as Difference
+FROM STATION;
+```
+
+MySQL
+
+```sql
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY) 
+FROM STATION;
+```
+
+
+
+### Output
+
+```bash
+13
+```
+
+### Checking the query
+
+```SQL
+-- Number of records of cities listed
+SELECT COUNT(CITY) FROM STATION;  -- 499
+
+-- Number of cities listed (unuique elements)
+SELECT COUNT(DISTINCT CITY) FROM STATION; -- 486
+
+-- 499 - 486 = 13
+```
+
+
+
+
+# References
 
 * https://www.geeksforgeeks.org/sql/sql-functions/
 
