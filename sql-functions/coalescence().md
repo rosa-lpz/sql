@@ -1,9 +1,9 @@
-# coalescence()
+# COALESCE()
 
 
 The COALESCE function in SQL is used to handle NULL values by returning the first non-NULL value from a list of expressions. It is particularly useful for ensuring that query results contain meaningful data, even when some values are missing.
 
-Syntax
+## Syntax
 The basic syntax for the COALESCE function is:
 
 COALESCE(expression1, expression2, ..., expressionN)
