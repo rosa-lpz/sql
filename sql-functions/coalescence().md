@@ -5,11 +5,13 @@ The COALESCE function in SQL is used to handle NULL values by returning the firs
 
 ## Syntax
 The basic syntax for the COALESCE function is:
-
+```sql
 COALESCE(expression1, expression2, ..., expressionN)
-
+```
 * expression1, expression2, ..., expressionN: These are the values or columns you want to evaluate. COALESCE will return the first non-NULL value from this list.
 
 ## References
 * https://www.w3schools.com/sql/sql_isnull.asp
 * https://www.stratascratch.com/blog/sql-coalesce-function-a-guide-for-postgresql-users
+
+ 
