@@ -1,11 +1,17 @@
 ## Window Functions
 SQL window functions allow performing calculations across a set of rows that are related to the current row, without collapsing the result into a single value. They are commonly used for tasks like aggregates, rankings and running totals. The OVER clause defines the “window” of rows for the calculation. It can:
 
-PARTITION BY: It divides the data into groups using PARTITION BY.
-ORDER BY: It specifies the order of rows within each group using ORDER BY.
+* PARTITION BY: It divides the data into groups using PARTITION BY.
+* ORDER BY: It specifies the order of rows within each group using ORDER BY.
 With this, functions such as SUM(), AVG(), ROW_NUMBER(), RANK() and DENSE_RANK() can be applied in a controlled way.
+Syntax:
 
-
+```sql
+SELECT column_name1, 
+       window_function(column_name2) 
+       OVER ([PARTITION BY column_name3] [ORDER BY column_name4]) AS new_column
+FROM table_name;
+```
 ### PARTITION BY
 
 Calculates the average `extension` length within each office. The `PARTITION BY` clause divides the data into partitions based on the `officeCode` column.
