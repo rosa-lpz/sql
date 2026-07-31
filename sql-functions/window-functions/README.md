@@ -12,6 +12,15 @@ SELECT column_name1,
        OVER ([PARTITION BY column_name3] [ORDER BY column_name4]) AS new_column
 FROM table_name;
 ```
+
+* window_function: Aggregate or ranking function (SUM(), AVG(), ROW_NUMBER(), etc.)
+* column_name1: Column(s) to display
+* column_name2: Column used by the window function
+* column_name3: Column for grouping (PARTITION BY)
+* column_name4: Column for ordering (ORDER BY)
+* new_column: Alias for the window function result
+* table_name: Table to select data from
+
 ### PARTITION BY
 
 Calculates the average `extension` length within each office. The `PARTITION BY` clause divides the data into partitions based on the `officeCode` column.
