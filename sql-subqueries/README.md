@@ -1,24 +1,23 @@
 # SQL Subquery
+A SQL subquery is a query nested within another SQL query, used to perform operations that require multiple steps or complex logic. Subqueries can simplify queries, improve readability, and allow for dynamic data retrieval based on the results of another query.
 
-A subquery is an SQL query nested inside another [query](https://www.sqltutorial.org/sql-select/). The query that contains a subquery is known as an outer query.
+It allows complex filtering, aggregation and data manipulation by using the result of one query inside another. They are an essential tool when we need to perform operations like:
+
+* Apply aggregate functions like SUM, COUNT or AVG dynamically.
+* Update data using values from other tables.
+* Delete rows based on conditions returned by another query.
 
 **Syntax**
 
 ```SQL
-SELECT
-  select_list
-FROM
-  table1
-  INNER JOIN table2 ON join_condition
-WHERE
-  filter_condition;
+SELECT ..., (
+    SELECT ...
+    FROM ..
+    WHERE ...
+)AS subquery_alias
+FROM ...;
+
 ```
-
-- The `SELECT` clause can accept a single value, which can be a column or an expression.
-- The `FROM` and `INNER JOIN` clauses can accept a result set such as a table.
-- The `WHERE` can accept a single value, which can be a column or an expression.
-
-* Note: The join can be `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, or `FULL JOIN`.
 
 
 
@@ -50,15 +49,7 @@ Here's a handy table summarizing these rules:
 | No ORDER BY   | ORDER BY can't be used in a subquery                         |
 | Multiple Rows | Use multiple value operators for subqueries returning multiple rows |
 
-## Subqueries with the SELECT Statement
 
-Subqueries are most commonly used with the SELECT statement. They can be incredibly powerful for retrieving data based on dynamic conditions. Let's look at a more complex example:
-
-```sql
-SELECT product_name, price
-FROM products
-WHERE price > (SELECT AVG(price) FROM products);
-```
 
 
 
@@ -66,3 +57,4 @@ WHERE price > (SELECT AVG(price) FROM products);
 
 * https://www.sqltutorial.org/sql-subquery/
 * https://w3schools.tech/tutorial/sql/sql-sub-queries
+* https://www.geeksforgeeks.org/sql/sql-subquery/
