@@ -10,12 +10,12 @@ It allows complex filtering, aggregation and data manipulation by using the resu
 **Syntax**
 
 ```SQL
-SELECT ..., (
-    SELECT ...
-    FROM ..
-    WHERE ...
-)AS subquery_alias
-FROM ...;
+SELECT column_name
+FROM table_name
+WHERE column_name operator
+      (SELECT column_name 
+       FROM table_name 
+       WHERE condition);
 
 ```
 
