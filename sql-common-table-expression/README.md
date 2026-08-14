@@ -84,6 +84,11 @@ WITH RECURSIVE OrgChart AS (
 SELECT * FROM OrgChart;
 ```
 
+
+
 # References
 * https://www.geeksforgeeks.org/sql/cte-in-sql/
 * https://www.geeksforgeeks.org/sql/sql-with-clause/
+* https://www.tutorialspoint.com/sql/sql-common-table-expression.htm
+* https://www.datacamp.com/tutorial/cte-sql
+* https://biwave.substack.com/p/common-table-expressions-in-sql
