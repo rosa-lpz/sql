@@ -1,6 +1,15 @@
+# Common Table Expression (CTE) in SQL
+A Common Table Expression (CTE) is a temporary result set in SQL that you can reference within a single query. CTEs simplify complex queries, make them easier to read and can be reused multiple times within the same query. It is used for:
+
+* Performing recursive operations, such as traversing hierarchical data.
+* Breaking down multi-step calculations into manageable parts.
+* Replacing nested subqueries in complex data retrieval task
+
 # SQL WITH Clause
 
 The SQL WITH clause (Common Table Expression or CTE) defines a temporary result set that can be used within a query. It simplifies complex SQL statements, making them easier to read, manage and reuse.
+
++ `WITH` creates a **Common Table Expression (CTE)**.
 
 ## Syntax
 
@@ -76,4 +85,5 @@ SELECT * FROM OrgChart;
 ```
 
 # References
+* https://www.geeksforgeeks.org/sql/cte-in-sql/
 * https://www.geeksforgeeks.org/sql/sql-with-clause/
