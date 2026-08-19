@@ -1,6 +1,5 @@
 # SQL
-Structured Query Language (SQL)
-
+Structured Query Language (SQL) is a standard language for storing, manipulating and retrieving data in databases.
 ## Content
 
 * [1. SQL Fundamentals](01_sql-fundamentals/)
