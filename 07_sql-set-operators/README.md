@@ -1,4 +1,4 @@
-#  SQL COMBINATIONS
+#  SQL SET OPERATORS
 
 * [UNION ALL](union-all.md)
 
