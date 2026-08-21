@@ -1,5 +1,110 @@
 # AND, OR and NOT
 
+# SELECT clause
+
+In a `SELECT`,  `AND`, `OR`, and `NOT` operators are used to create **logical/Boolean expressions**, rather than to choose columns in `WHERE` clause.
+
+## Syntax
+
+**AND** / **OR**
+
+```sql
+SELECT column1 AND/OR column2 , ...  
+FROM table_name
+---
+SELECT column1 <operator> <number> AND/OR column2 =<number>, ...  -- operator: =, !=, < <=, >, >=
+FROM table_name
+```
+
+
+
+**NOT**
+
+```SQL
+SELECT NOT (column1 <operator> <number> ), ... -- operator: =, !=, < <=, >, >=
+FROM table_name
+```
+
+
+
+## Examples
+
+
+| name | age  | salary |
+| ---- | ---- | ------ |
+| John | 25   | 50000  |
+| Mary | 35   | 70000  |
+| Bob  | 45   | 90000  |
+
+
+
+### AND
+
+```SQL
+SELECT age > 30 AND salary > 60000
+FROM employees;
+```
+
+
+
+**Output**
+
+Conceptually, this evaluates the expression for each row:
+
+```
+John → FALSE AND FALSE → FALSE
+Mary → TRUE  AND TRUE  → TRUE
+Bob  → TRUE  AND TRUE  → TRUE
+```
+
+
+
+### OR
+
+```SQL
+SELECT age > 40 OR salary > 80000
+FROM employees;
+```
+
+
+
+**Output**
+
+Conceptually, this evaluates the expression for each row:
+
+```
+John → FALSE
+Mary → FALSE
+Bob  → TRUE
+```
+
+
+
+
+
+### NOT
+
+```SQL
+SELECT NOT (age > 30)
+FROM employees;
+```
+
+
+
+**Output**
+
+Conceptually, this evaluates the expression for each row:
+
+```
+John → TRUE
+Mary → FALSE
+Bob  → FALSE
+```
+
+
+
+# WHERE clause
+
 The `WHERE` clause can be combined with `AND`, `OR`, and `NOT` operators.
 
 The `AND` and `OR` operators are used to filter records based on more than one condition:
@@ -15,7 +120,7 @@ The `NOT` operator displays a record if the condition(s) is NOT TRUE.
 
 **AND**
 
-```
+```sql
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition1 AND condition2 AND condition3 ...;
@@ -25,7 +130,7 @@ WHERE condition1 AND condition2 AND condition3 ...;
 
 **OR**
 
-```
+```sql
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition1 OR condition2 OR condition3 ...;
@@ -197,7 +302,7 @@ Number of Records: 67
 
 
 
-## Reference
+# Reference
 
 - https://www.w3schools.com/sql/sql_and_or.asp
 
