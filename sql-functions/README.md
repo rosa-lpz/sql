@@ -9,17 +9,19 @@ SQL functions are built-in operations that perform  calculations, manipulate dat
 
 SQL functions are classified based on how they process data and the type of results they return. 
 
-### 1. Single Row Function
+###  Single Row Function
 
 Single-row functions return one result per row of a query. They are widely used in SELECT lists, WHERE clauses, and conditional expressions to manipulate  and format individual data items. 
 
 **Types of Single-Row Functions:**
 
 - **Numeric Functions:**  Perform arithmetic or numeric operations (e.g., ROUND(), ABS(), POWER()).
-- **Character Functions:** Manipulate text values (e.g., UPPER(), LOWER(), INITCAP()).
+- **String Functions:** Manipulate text values (e.g., UPPER(), LOWER(), INITCAP()).
 - **Date and Time Functions:** Handle date, time, and interval calculations (e.g., SYSDATE, NOW()). 
 - **Conversion Functions:** Convert data from one type to another (e.g., TO_CHAR(), CAST()). 
 - **Data Mining Functions:** Used in predictive modeling queries (e.g., PREDICTION_PROBABILITY()).
+- **Null functions**
+- **Case statement**
 
 **Example:** First, we will [create](https://www.geeksforgeeks.org/sql/sql-create-table/) a demo SQL database and table, on which we will use the  Single Row Function.
 
@@ -27,7 +29,14 @@ Single-row functions return one result per row of a query. They are widely used 
 
 
 
-## Window Functions
+## Aggregation & Analytical Functions
+
+* [Aggregate functions](aggregate-functions)
+* [Window Functions](window-functions)
+  * Window basics
+  * Window aggregate funcion
+  * Window ranking function
+  * Window value function
 
  
 

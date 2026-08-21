@@ -1,4 +1,4 @@
-## Window Functions
+# SQL Window Functions
 SQL window functions allow performing calculations across a set of rows that are related to the current row, without collapsing the result into a single value. They are commonly used for tasks like aggregates, rankings and running totals. The OVER clause defines the “window” of rows for the calculation. It can:
 
 * PARTITION BY: It divides the data into groups using PARTITION BY.
