@@ -5,6 +5,10 @@
     * [SELECT DISTINCT](select.md#select-distinct)
 * [FROM](from.md)
 * [WHERE](where.md)
+* GROUP BY
+* HAVING
+* TOP
+* Query order and execution
 
 # Introduction
 
