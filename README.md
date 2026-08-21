@@ -6,10 +6,57 @@ Structured Query Language (SQL) is a standard language for storing, manipulating
 * [2. SQL Database](02_sql-database/)
 * [3. SQL Data Manipulation](03_sql-data-manipulation/)
 * [4. SQL Data Query](04_sql-data-query/)
-* [5. SQL Operators](05_sql-operators/)
+* [5. SQL Data Filtering](05_sql-data-filtering/)
 * [6. SQL Joins](06_sql-joins/)
-* [7. SQL Combinations](07_sql-combinations/)
-* [SQL Functions](https://github.com/rosa-lpz/SQL/blob/main/SQL%20Functions.md)
+* [7. SQL Set Operators](07_sql-set-operators/)
+* [8. SQL Functions](08_sql-functions/)
+* [10. SQL Common Table Expression (CTE)](10_sql-common-table-expression/)
+
+
+
+
+
+
+
+
+
+## General Overview
+
+
+
+```mermaid
+flowchart LR
+SQL["SQL<br/>Structured Query Language"]
+SQL --> Fundamentals["SQL<br/>Fundamentals"]
+SQL --> Database["SQL<br/>Database"]
+SQL --> DataManipulation["SQL<br/>Data Manipulation"]
+SQL --> DataQuery["SQL<br/>Data Query"]
+SQL --> DataFiltering["SQL<br/>Data Filtering"]
+SQL --> Joins["SQL<br/>Joins"]
+SQL --> SetOps["SQL<br/>Set Operators"]
+SQL --> Functions["SQL<br/>Functions"]
+SQL --> Subqueries["SQL<br/>Subqueries"]
+SQL --> CTE["SQL<br/>Common Table Expressions (CTE)"]
+
+DataQuery-->QueryElements["SELECT<br/>WHERE<br/>GROUP BY<br/>HAVING"]
+Joins-->JoinsElements["INNER JOIN<br/>LEFT JOIN<br/>RIGHT JOIN<br/>FULL JOIN<br/>CROSS JOIN"]
+SetOps-->SetOpsElements["UNION<br/>UNION ALL<br/>EXCEPT<br/>INTERSECT"]
+Functions-->RowLevelFunctions["Row-Level Functions"]
+Functions-->AggrAnalyticalFunctions["Aggregation & Analytical Functions"]
+RowLevelFunctions-->RowLevFElm["String Functions<br/>Number Functions<br/>Date & Time Functions<br/>Null Functions<br/>Case Statement"]
+AggrAnalyticalFunctions-->AggrAnalyticalFElm["Aggregate Funtions<br/>Window Basics<br/>Window Aggregate Functions<br/>Window Ranking Function<br/>Window Value Function"]
+
+
+classDef sql fill:#2563eb,color:#fff,stroke:#1e40af,stroke-width:2px
+classDef category fill:#7c3aed,color:#fff,stroke:#5b21b6,stroke-width:2px
+classDef command fill:#f3f4f6,color:#111,stroke:#6b7280
+classDef logic fill:#fef3c7,color:#92400e,stroke:#d97706,stroke-width:2px
+
+class SQL sql
+class Fundamentals,Database,DataManipulation,DataQuery,DataFiltering,Joins,SetOps,Functions,Subqueries,CTE category
+class DataElements,QueryElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions command
+class RowLevFElm,AggrAnalyticalFElm logic
+```
 
 
 
@@ -21,17 +68,7 @@ Structured Query Language (SQL) is a standard language for storing, manipulating
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+## SQL Sublanguages
 
 ```mermaid
 flowchart LR
@@ -72,6 +109,8 @@ class DDL,DML,DQL,DCL,TCL category
 class DDL_C,DML_C,SELECT,FROM,WHERE,GROUP,HAVING,ORDER,DISTINCT,JOIN,DCL_C,TCL_C command
 class LOGIC logic
 ```
+
+
 
 
 
