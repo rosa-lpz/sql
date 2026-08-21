@@ -14,3 +14,4 @@
 
 # REFERENCES
  * DataQuest - SQL Cheat Sheet | [PDF](cheatsheets/dataquest_sql-cheat-sheet.pdf)  | [Website](https://www.dataquest.io/cheat-sheet/sql-cheat-sheet/) 
+ * https://www.geeksforgeeks.org/sql/set-operators-in-sql/
