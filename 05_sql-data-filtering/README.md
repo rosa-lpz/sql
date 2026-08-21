@@ -1,4 +1,7 @@
-# SQL Operators
+# SQL Data Filtering
+
+To filter data in SQL we use operators.
+
 ## Content
 * [Syntax](#syntax)
 * [AND, OR and NOT](#and-or-and-not)
