@@ -16,7 +16,7 @@ ON table1.column_name = table2.column_name;
 
 
 
-## **RIGHT JOIN:**
+## RIGHT JOIN
 
 Returns all records from the right table, and the matched records from the left table.
 
@@ -56,7 +56,11 @@ WHERE condition;
 
 
 
+# Reasons to JOIN data
 
+* Recombine data
+* Data enrichment
+* Check the existence of data in table
 
 
 
