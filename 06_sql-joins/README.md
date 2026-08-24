@@ -1,5 +1,13 @@
 # SQL JOINS
 
+![sql-joins](img/sql-joins.png)
+
+![top-4-types-sql-joins](img/top-4-types-sql-joins.png)
+
+
+
+
+
 
 ## LEFT JOIN
 
@@ -68,3 +76,4 @@ WHERE condition;
 ### References
 
 * https://www.sqlshack.com/sql-multiple-joins-for-beginners-with-examples/
+* https://github.com/ByteByteGoHq/system-design-101/blob/main/data/guides/how-do-sql-joins-work.md
