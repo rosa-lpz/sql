@@ -38,7 +38,10 @@ SQL --> Functions["SQL<br/>Functions"]
 SQL --> Subqueries["SQL<br/>Subqueries"]
 SQL --> CTE["SQL<br/>Common Table Expressions (CTE)"]
 
-DataQuery-->QueryElements["SELECT<br/>WHERE<br/>GROUP BY<br/>HAVING"]
+Fundamentals --> FundamentalsElements["SQL<br/>Database types<br/>SQL Commands"]
+Database-->DatabaseElements["CREATE<br/>ALTER<br/>DROP<br/>TRUNCATE<br/>RENAME"]
+DataManipulation-->DataMapElements["INSERT<br/>UPDATE<br/>DELETE<br/>MERGE"]
+DataQuery-->QueryElements["SELECT<br/>FROM<br/>WHERE<br/>GROUP BY<br/>HAVING<br/>ORDER BY<br/>DISTINCT<br/>TOP<br/>Query Order & Execution"]
 Joins-->JoinsElements["INNER JOIN<br/>LEFT JOIN<br/>RIGHT JOIN<br/>FULL JOIN<br/>CROSS JOIN"]
 SetOps-->SetOpsElements["UNION<br/>UNION ALL<br/>EXCEPT<br/>INTERSECT"]
 Functions-->RowLevelFunctions["Row-Level Functions"]
@@ -54,7 +57,7 @@ classDef logic fill:#fef3c7,color:#92400e,stroke:#d97706,stroke-width:2px
 
 class SQL sql
 class Fundamentals,Database,DataManipulation,DataQuery,DataFiltering,Joins,SetOps,Functions,Subqueries,CTE category
-class DataElements,QueryElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions command
+class FundamentalsElements,DatabaseElements,DataMapElements,QueryElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions command
 class RowLevFElm,AggrAnalyticalFElm logic
 ```
 
