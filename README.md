@@ -38,6 +38,7 @@ SQL --> Functions["SQL<br/>Functions"]
 SQL --> Subqueries["SQL<br/>Subqueries"]
 SQL --> CTE["SQL<br/>Common Table Expressions (CTE)"]
 SQL -->Performance["SQL<br/>Performance Optimization"]
+SQL -->Advanced["Advanced SQL Techniques"]
 
 Fundamentals --> FundamentalsElements["SQL<br/>Database types<br/>SQL Commands"]
 Database-->DatabaseElements["CREATE<br/>ALTER<br/>DROP<br/>TRUNCATE<br/>RENAME"]
@@ -52,6 +53,7 @@ RowLevelFunctions-->RowLevFElm["String Functions<br/>Number Functions<br/>Date &
 AggrAnalyticalFunctions-->AggrAnalyticalFElm["Aggregate Funtions<br/>Window Basics<br/>Window Aggregate Functions<br/>Window Ranking Function<br/>Window Value Function"]
 
 Performance-->PerformanceElements["Indexes<br/>Partitions<br/>Performance Tips"]
+Advanced-->AdvancedElements["Views<br/>CTAS TAble & Temp Tables<br/>Stored Procedure<br/>Triggers"]
 
 classDef sql fill:#2563eb,color:#fff,stroke:#1e40af,stroke-width:2px
 classDef category fill:#7c3aed,color:#fff,stroke:#5b21b6,stroke-width:2px
@@ -59,8 +61,8 @@ classDef command fill:#f3f4f6,color:#111,stroke:#6b7280
 classDef logic fill:#fef3c7,color:#92400e,stroke:#d97706,stroke-width:2px
 
 class SQL sql
-class Fundamentals,Database,DataManipulation,DataQuery,DataFiltering,Joins,SetOps,Functions,Subqueries,CTE,Performance category
-class FundamentalsElements,DatabaseElements,DataMapElements,QueryElements,DataFiltElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions,PerformanceElements command
+class Fundamentals,Database,DataManipulation,DataQuery,DataFiltering,Joins,SetOps,Functions,Subqueries,CTE,Performance,Advanced category
+class FundamentalsElements,DatabaseElements,DataMapElements,QueryElements,DataFiltElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions,PerformanceElements,AdvancedElements command
 class RowLevFElm,AggrAnalyticalFElm logic
 ```
 
