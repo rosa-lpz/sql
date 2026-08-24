@@ -28,7 +28,7 @@ Structured Query Language (SQL) is a standard language for storing, manipulating
 flowchart LR
 SQL["SQL<br/>Structured Query Language"]
 SQL --> Fundamentals["SQL<br/>Fundamentals"]
-SQL --> Database["SQL<br/>Database"]
+SQL --> Database["SQL<br/>Data Definition"]
 SQL --> DataManipulation["SQL<br/>Data Manipulation"]
 SQL --> DataQuery["SQL<br/>Data Query"]
 SQL --> DataFiltering["SQL<br/>Data Filtering"]
@@ -37,18 +37,21 @@ SQL --> SetOps["SQL<br/>Set Operators"]
 SQL --> Functions["SQL<br/>Functions"]
 SQL --> Subqueries["SQL<br/>Subqueries"]
 SQL --> CTE["SQL<br/>Common Table Expressions (CTE)"]
+SQL -->Performance["SQL<br/>Performance Optimization"]
 
 Fundamentals --> FundamentalsElements["SQL<br/>Database types<br/>SQL Commands"]
 Database-->DatabaseElements["CREATE<br/>ALTER<br/>DROP<br/>TRUNCATE<br/>RENAME"]
 DataManipulation-->DataMapElements["INSERT<br/>UPDATE<br/>DELETE<br/>MERGE"]
 DataQuery-->QueryElements["SELECT<br/>FROM<br/>WHERE<br/>GROUP BY<br/>HAVING<br/>ORDER BY<br/>DISTINCT<br/>TOP<br/>Query Order & Execution"]
-Joins-->JoinsElements["INNER JOIN<br/>LEFT JOIN<br/>RIGHT JOIN<br/>FULL JOIN<br/>CROSS JOIN"]
+DataFiltering-->DataFiltElements["Comparison Operators<br/>Logical Operators<br/>BETWEEN<br/>IN<br/>LIKE"]
+Joins-->JoinsElements["INNER JOIN<br/>LEFT JOIN<br/>RIGHT JOIN<br/>FULL JOIN<br/>CROSS JOIN<br/>LEFT Anti JOIN<br/>RIGHT Anti JOIN<br/>FULL Anti JOIN<br/>CROSS JOIN"]
 SetOps-->SetOpsElements["UNION<br/>UNION ALL<br/>EXCEPT<br/>INTERSECT"]
 Functions-->RowLevelFunctions["Row-Level Functions"]
 Functions-->AggrAnalyticalFunctions["Aggregation & Analytical Functions"]
 RowLevelFunctions-->RowLevFElm["String Functions<br/>Number Functions<br/>Date & Time Functions<br/>Null Functions<br/>Case Statement"]
 AggrAnalyticalFunctions-->AggrAnalyticalFElm["Aggregate Funtions<br/>Window Basics<br/>Window Aggregate Functions<br/>Window Ranking Function<br/>Window Value Function"]
 
+Performance-->PerformanceElements["Indexes<br/>Partitions<br/>Performance Tips"]
 
 classDef sql fill:#2563eb,color:#fff,stroke:#1e40af,stroke-width:2px
 classDef category fill:#7c3aed,color:#fff,stroke:#5b21b6,stroke-width:2px
@@ -56,8 +59,8 @@ classDef command fill:#f3f4f6,color:#111,stroke:#6b7280
 classDef logic fill:#fef3c7,color:#92400e,stroke:#d97706,stroke-width:2px
 
 class SQL sql
-class Fundamentals,Database,DataManipulation,DataQuery,DataFiltering,Joins,SetOps,Functions,Subqueries,CTE category
-class FundamentalsElements,DatabaseElements,DataMapElements,QueryElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions command
+class Fundamentals,Database,DataManipulation,DataQuery,DataFiltering,Joins,SetOps,Functions,Subqueries,CTE,Performance category
+class FundamentalsElements,DatabaseElements,DataMapElements,QueryElements,DataFiltElements,JoinsElements,SetOpsElements,RowLevelFunctions,AggrAnalyticalFunctions,PerformanceElements command
 class RowLevFElm,AggrAnalyticalFElm logic
 ```
 

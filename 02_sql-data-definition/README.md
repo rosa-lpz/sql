@@ -263,7 +263,7 @@ TRUNCATE TABLE table_name;
 
 * https://www.tutorialsteacher.com/sql/sql-truncate-table
 
- 
+
 ## SQL Merge 
 
 The MERGE statement selects the rows from one or more tables (called Source table), and based on conditions specified, INSERT or UPDATE data to another table (called Target table).
