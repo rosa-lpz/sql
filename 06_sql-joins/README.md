@@ -2,7 +2,15 @@
 
 ![sql-joins](img/sql-joins.png)
 
+
+
+
+
+## Top 4 Types of SQL Joins
+
 ![top-4-types-sql-joins](img/top-4-types-sql-joins.png)
+
+
 
 
 
