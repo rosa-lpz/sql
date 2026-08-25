@@ -25,6 +25,17 @@ SQL combinations:
 
 
 
+## **INNER JOIN**
+
+```SQL
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+```
+
+
+
 
 ## LEFT JOIN
 
@@ -71,16 +82,6 @@ ON table1.column_name = table2.column_name;
 
 
 
-## **SELF JOIN**
-
-```SQL
-SELECT column_name(s)
-FROM table1 T1, table1 T2
-WHERE condition;
-```
-
-
-
 # Reasons to JOIN data
 
 * Recombine data
@@ -100,4 +101,6 @@ WHERE condition;
 
 * https://www.sqlshack.com/sql-multiple-joins-for-beginners-with-examples/
 * https://github.com/ByteByteGoHq/system-design-101/blob/main/data/guides/how-do-sql-joins-work.md
-* Data with Baara - [SQL Full Course for Beginners (30 Hours) – From Zero to Hero](https://www.youtube.com/watch?v=SSKVgrwhzus&list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe)
+* Data with Baara
+  * [SQL Full Course for Beginners (30 Hours) – From Zero to Hero](https://www.youtube.com/watch?v=SSKVgrwhzus&list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe)
+  * [Advanced SQL Joins (Visually Explained) | ANTI, CROSS | [#SQL](https://www.youtube.com/hashtag/sql) Course 9](https://www.youtube.com/watch?v=Of2Z6hL0ETE&list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe&index=11)
