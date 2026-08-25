@@ -1,5 +1,14 @@
 # SQL JOINS
 
+SQL combinations:
+
+* Columns --> Joins
+* Rows -- > Set operators
+
+![sql-combinations](img/sql-combinations.png)
+
+
+
 ![sql-joins](img/sql-joins.png)
 
 
@@ -78,10 +87,17 @@ WHERE condition;
 * Data enrichment
 * Check the existence of data in table
 
+![sql-joins-reasons](img/sql-joins-reasons.png)
 
+
+
+# Join decision tree
+
+![joins-decision-tree](img/joins-decision-tree.png)
 
 
 ### References
 
 * https://www.sqlshack.com/sql-multiple-joins-for-beginners-with-examples/
 * https://github.com/ByteByteGoHq/system-design-101/blob/main/data/guides/how-do-sql-joins-work.md
+* Data with Baara - [SQL Full Course for Beginners (30 Hours) – From Zero to Hero](https://www.youtube.com/watch?v=SSKVgrwhzus&list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe)
