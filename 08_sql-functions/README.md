@@ -34,7 +34,7 @@ Single-row functions return one result per row of a query. They are widely used 
 * [Aggregate functions](aggregate-functions)
 * [Window Functions](window-functions)
   * Window basics
-  * Window aggregate funcion
+  * Window aggregate function
   * Window ranking function
   * Window value function
 
