@@ -26,8 +26,12 @@ FROM table_name
 WHERE column_name IS NULL; 
 ```
 
-### 
+
 
 # References
 
 * https://www.w3schools.com/sql/sql_null_values.asp
+
+### Videos
+
+* Data with Baraa - [SQL NULL Functions | COALESCE, ISNULL, NULLIF, IS (NOT) NULL](https://youtu.be/X_cPXHV2NQ4?list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe)
