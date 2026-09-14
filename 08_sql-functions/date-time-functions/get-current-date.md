@@ -73,5 +73,6 @@ Databricks   → CURRENT_DATE()
  
  
  # References
+ * https://www.geeksforgeeks.org/sql/sql-date-functions/
  * https://www.w3schools.com/sql/func_mysql_now.asp
  * https://learn.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver17
