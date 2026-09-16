@@ -305,5 +305,5 @@ Number of Records: 67
 # Reference
 
 - https://www.w3schools.com/sql/sql_and_or.asp
-
+- https://www.geeksforgeeks.org/sql/sql-and-and-or-operators/
   
