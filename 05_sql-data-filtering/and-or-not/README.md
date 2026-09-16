@@ -1,5 +1,5 @@
 # AND, OR and NOT
-
+The SQL AND and OR operators are used to filter data based on multiple conditions. These logical operators allow users to retrieve precise results from a database by combining various conditions in SELECT, INSERT, UPDATE and DELETE statements.
 # SELECT clause
 
 In a `SELECT`,  `AND`, `OR`, and `NOT` operators are used to create **logical/Boolean expressions**, rather than to choose columns in `WHERE` clause.
