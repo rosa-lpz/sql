@@ -122,6 +122,10 @@ class LOGIC logic
 
 
 
+
+
+
+
 # Resources
 
 ## Cheatsheets
@@ -131,7 +135,9 @@ class LOGIC logic
 
 ## Courses
 
-* Data with Baara - SQL Full Course for Beginners (30 Hours) – From Zero to Hero: https://youtu.be/SSKVgrwhzus
+* **Data with Baara**
+  * [SQL Full Course for Beginners (30 Hours) – From Zero to Hero](https://youtu.be/SSKVgrwhzus)
+  * [30 SQL Tips and Tricks From 18 Years of Experience |SQL Course 43](https://youtu.be/Iyr7KQUCb0M)
 
 
 

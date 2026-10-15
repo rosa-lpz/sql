@@ -34,3 +34,12 @@ Indexing is the single most impactful way to boost speed. Without an index, the 
 Most modern databases (PostgreSQL, MySQL, SQL Server) have an `EXPLAIN` command.
 
 > **Pro Tip:** Prefix your query with `EXPLAIN` or `EXPLAIN ANALYZE`. It will show you exactly how the database intends to execute the query, highlighting where it’s performing slow scans or nested loops.
+
+
+
+
+
+# References
+
+* ByteByteGo - [Secret To Optimizing SQL Queries - Understand The SQL Execution Order](https://www.youtube.com/watch?v=BHwzDmr6d7s)
+* Data with Bara - [30 SQL Tips and Tricks From 18 Years of Experience |SQL Course 43](https://youtu.be/Iyr7KQUCb0M)
