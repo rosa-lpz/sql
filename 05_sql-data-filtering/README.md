@@ -3,7 +3,15 @@
 To filter data in SQL we use operators.
 
 ## Content
-* [Syntax](#syntax)
+* [SQL Operators](01_sql-operators/README.md)
+    * [Syntax](01_sql-operators/README.md#syntax)
+    * [Classification of SQL Operators](01_sql-operators/README.md#classification-of-sql-operators)
+        * Arithmetic Operators
+        * Bitwise Operators
+        * Comparison Operators
+        * Compound Operators
+        * Logical Operators
+        * Complex Clauses
 * [AND, OR and NOT](#and-or-and-not)
 * [BETWEEN](between/README.md#between)
     * [NOT BETWEEN](between/README.md#not-between)

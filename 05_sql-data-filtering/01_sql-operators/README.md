@@ -8,9 +8,7 @@ In order to filter certain results from being returned, we need to use a `WHERE`
 SELECT column1 <OPERATOR> column2  
 FROM table_name  
 WHERE condition;  
-​  
 ------  
-​  
 SELECT column1, column2, …  
 FROM table_name  
 WHERE condition  
@@ -25,9 +23,16 @@ More complex clauses can be constructed by joining numerous `AND` or `OR` logica
 
 When writing `WHERE` clauses with columns containing text data, SQL supports a number of useful operators to do things like case-insensitive string comparison and wildcard pattern matching. We show a few common text-data specific operators below
 
-
+## Classification of SQL Operators
 
 The following operators can be used in the `WHERE` clause:
+
+* Arithmetic Operators
+* Bitwise Operators
+* Comparison Operators
+* Compound Operators
+* Logical Operators
+* Complex Clauses
 
 ## **Arithmetic Operators**
 
@@ -89,7 +94,7 @@ The following operators can be used in the `WHERE` clause:
 | OR       | TRUE if any of the conditions separated by OR is TRUE        |
 | SOME     | TRUE if any of the subquery values meet the condition        |
 
-## Complex clauses
+## Complex Clauses
 
 More complex clauses can be constructed by joining numerous `AND` or `OR` logical keywords (ie. num_wheels >= 4 AND doors <= 2). And below are some useful operators that you can use for numerical data (ie. integer or floating point):
 
