@@ -1,4 +1,4 @@
-# SQL - Like operator
+# SQL LIKE
 
 The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column. It can be used with numbers, string, or date values. However, it is recommended to use the string values.
 
