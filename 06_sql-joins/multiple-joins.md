@@ -7,7 +7,7 @@
 
 
 
-### What are SQL multiple joins?
+## What are SQL multiple joins?
 
 Multiple joins can be described as follows; multiple join is a query that contains the same or different join types, which are used more than once**.** Thus, we gain the ability to combine multiple tables of data in order to overcome relational database issues.
 

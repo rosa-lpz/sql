@@ -97,7 +97,8 @@ ON table1.column_name = table2.column_name;
 ![joins-decision-tree](img/joins-decision-tree.png)
 
 
-### References
+
+# References
 
 * https://www.sqlshack.com/sql-multiple-joins-for-beginners-with-examples/
 * https://github.com/ByteByteGoHq/system-design-101/blob/main/data/guides/how-do-sql-joins-work.md

@@ -1,4 +1,4 @@
-## INNER JOIN
+# INNER JOIN
 
 Returns records that have matching values in two or more tables.
 
@@ -13,7 +13,7 @@ The order of tables doesn't matter
 
 
 
-# Reasons to JOIN data
+## Reasons to JOIN data
 
 * Recombine data
 * Data enrichment
@@ -21,9 +21,9 @@ The order of tables doesn't matter
 
 
 
-# Examples
+## Examples
 
-## Example 1
+### Example 1
 
 
 
@@ -31,7 +31,7 @@ The order of tables doesn't matter
 
 
 
-## Example 2
+### Example 2
 
 
 
