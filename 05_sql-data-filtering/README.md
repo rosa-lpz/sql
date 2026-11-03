@@ -18,8 +18,8 @@ To filter data in SQL we use operators.
 
 * **[Logical Operators](logical-operators/)**
 
-    * [AND, OR and NOT](logical-operators/and-or-and-not/)
-    * [BETWEEN](logical-operators/between/README.md#between)
+    * [AND, OR and NOT](logical-operators/and-or-not/)
+    * [BETWEEN](logical-operators/between/)
       * BETWEEN
       * NOT BETWEEN
       * BETWEEN dates
