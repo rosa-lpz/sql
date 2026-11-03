@@ -8,7 +8,7 @@ The `IN` operator is a shorthand for multiple `OR` conditions.
 
 **IN**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (value1, value2, ...);
@@ -16,7 +16,7 @@ WHERE column_name IN (value1, value2, ...);
 
 **NOT IN**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name NOT IN (value1, value2, ...);
@@ -26,7 +26,7 @@ WHERE column_name NOT IN (value1, value2, ...);
 
 **IN (FOR SUBQUERY)**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (SELECT STATEMENT / QUERY);
@@ -92,7 +92,7 @@ The table below shows the complete "Customers" table from the Northwind sample d
 
 The following SQL statement selects all customers that are from the same countries as the suppliers:
 
-```
+```sql
 SELECT * FROM Customers
 WHERE Country IN (SELECT Country FROM Suppliers);
 ```
@@ -152,7 +152,7 @@ Number of Records: 69
 
 Return records where `EmpId` is 1 or 3 or 5 or 6.
 
-```SQL
+```sql
 SELECT EmpId, FirstName, LastName, Salary
 FROM Employee
 WHERE EmpId IN (1, 3, 5, 6)
@@ -226,9 +226,13 @@ WHERE EmpId NOT IN (1, 3, 5);
 | 4     | 'Lex'     | 'De Haan' | 15000  |
 | 6     | 'Abdul'   | 'Kalam'   | 25000  |
 
+
+
 # References
 
 - https://www.w3schools.com/sql/sql_in.asp
+
 - https://www.tutorialsteacher.com/sql/sql-in-operator
-- 
+
+  
 
