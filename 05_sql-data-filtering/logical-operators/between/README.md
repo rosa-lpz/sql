@@ -1,5 +1,5 @@
 
-# BETWEEN
+# BETWEEN & NOT BETW
 
 The `BETWEEN` operator selects values within a given range. The values can be numbers, text, or dates. The range of values can be strings, numbers, or dates. The range of values must be specified with the AND operator.
 
