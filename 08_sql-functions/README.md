@@ -13,26 +13,20 @@ SQL functions are classified based on how they process data and the type of resu
 
 Single-row functions return one result per row of a query. They are widely used in SELECT lists, WHERE clauses, and conditional expressions to manipulate  and format individual data items. 
 
-**Types of Single-Row Functions:**
-
 - **Numeric Functions:**  Perform arithmetic or numeric operations (e.g., ROUND(), ABS(), POWER()).
-- **String Functions:** Manipulate text values (e.g., UPPER(), LOWER(), INITCAP()).
-- **Date and Time Functions:** Handle date, time, and interval calculations (e.g., SYSDATE, NOW()). 
-- **Conversion Functions:** Convert data from one type to another (e.g., TO_CHAR(), CAST()). 
+- **[String Functions](string-functions/):** Manipulate text values (e.g., UPPER(), LOWER(), INITCAP()).
+- **[Date and Time Functions](date-time-functions/):** Handle date, time, and interval calculations (e.g., SYSDATE, NOW()). 
+- **[Conversion Functions](conversion-functions/):** Convert data from one type to another (e.g., TO_CHAR(), CAST()). 
 - **Data Mining Functions:** Used in predictive modeling queries (e.g., PREDICTION_PROBABILITY()).
-- **Null functions**
+- **[Null functions](null-functions/)**
 - **Case statement**
-
-**Example:** First, we will [create](https://www.geeksforgeeks.org/sql/sql-create-table/) a demo SQL database and table, on which we will use the  Single Row Function.
-
-![Screenshot-2025-11-13-124752](https://media.geeksforgeeks.org/wp-content/uploads/20251113124837655226/Screenshot-2025-11-13-124752.png)Loan_applicant
 
 
 
 ## Aggregation & Analytical Functions
 
-* [Aggregate functions](aggregate-functions)
-* [Window Functions](window-functions)
+* **[Aggregate functions](aggregate-functions/)**
+* **[Window Functions](window-functions)**
   * Window basics
   * Window aggregate function
   * Window ranking function
