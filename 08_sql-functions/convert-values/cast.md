@@ -8,13 +8,19 @@ The CAST() function converts a value (of any type) into a specified datatype.
 ```sql
 CAST(expression AS datatype)
 ```
+or
+```sql
+expression::data_type
+```
 
 |Parameter/Argument	|Description|
 |---|---|
 |expression	|Required. The value to convert|
 |datatype	|Required. The datatype to convert expression to|
 
-### Example
+### Examples
+
+#### Example 1
 
 ```sql
 SELECT CAST(25.65 AS int);
@@ -23,7 +29,26 @@ Output
 ```sql
 25
 ```
-## SQL Server 
+#### Example 2
+
+```sql
+SELECT ProductName,
+       CAST(Price AS INTEGER) AS Price
+FROM Products;
+```
+
+Output
+
+```sql
+25
+```
+
+
+
+
+
+## SQL Server (T-SQL)
+
 ### Syntax
 ```sql
 CAST(expression AS datatype(length))
@@ -44,7 +69,7 @@ Output
 25
 ```
 
-## Databrics & Spark SQL
+## Databricks & Spark SQL
 Casts the value expr to the target data type type. This operator is a synonym for :: (colon colon sign) operator
 ### Syntax
 ```sql
@@ -72,3 +97,4 @@ Output
 * https://www.postgresql.org/docs/8.3/sql-expressions.html
 * https://www.w3schools.com/sql/func_sqlserver_cast.asp
 * https://docs.databricks.com/aws/en/sql/language-manual/functions/cast
+* https://www.geeksforgeeks.org/postgresql/postgresql-cast/
