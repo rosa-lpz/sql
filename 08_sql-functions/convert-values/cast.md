@@ -25,7 +25,8 @@ expression::data_type
 ```sql
 SELECT CAST(25.65 AS int);
 ```
-Output
+**Output**
+
 ```sql
 25
 ```
@@ -37,11 +38,26 @@ SELECT ProductName,
 FROM Products;
 ```
 
-Output
+**Output**
+
+* The CAST() function converts the Price column from VARCHAR to INTEGER
+
+
+
+#### Example 3 - Using the :: Type Cast Operator
 
 ```sql
-25
+SELECT ProductName,
+       Price::INTEGER AS Price
+FROM Products;
 ```
+
+**Output**
+
+* The CAST() function converts the Price column from VARCHAR to INTEGER
+* It produces the same result as the CAST() function while using a shorter syntax.
+
+
 
 
 
@@ -85,7 +101,10 @@ cast(sourceExpr AS targetType)
 ```sql
 SELECT CAST(25.65 AS int);
 ```
-Output
+**Output**
+
+* The result is type `targetType`.
+
 ```sql
 25
 ```
